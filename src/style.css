@@ -1,0 +1,354 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800;900&display=swap");
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a.navbar-brand {
+    font-weight: 900;
+    transform: scale(1.2);
+}
+
+a.nav-link {
+    font-weight: 700;
+}
+
+a.nav-link.btn-login {
+    background: #2952e3;
+    padding-left: 20px!important;
+    padding-right: 20px!important;
+    border-radius: 50px;
+}
+
+a.nav-link.btn-login:hover {
+    background: #2546bd;
+}
+
+.px-4-py-12{
+    padding : 5rem;
+}
+.welcome h1{
+    font-weight: 800;
+}
+.welcome p{
+    margin-top: 10px;
+}
+
+.welcome button.btn.btn-primary {
+    font-weight: 700;
+    padding: 10px 40px;
+    border-radius: 15px;
+}
+.welcome table{
+    margin-top: 20px;
+}
+
+.welcome table, th, td {
+    border: 1px solid white;
+    border-collapse: collapse;
+}
+
+.welcome td, th{
+    padding: 20px;
+}
+
+.welcome .eth-card{
+    position: relative;
+    height: 200px;
+    width: 100%;
+}
+.welcome .card-logo{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid white;
+    cursor: pointer;
+}
+.welcome .card-info{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+.welcome .card-wallet{
+    position: absolute;
+    bottom: 25px;
+    left: 20px;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: 700;
+}
+.welcome .card-network{
+    position: absolute;
+    bottom: 0px;
+    left: 20px;
+    cursor: pointer;
+    font-weight: 700;
+}
+.welcome .form-container{
+    margin-top: 20px;
+    width: 100%;
+    padding: 20px;
+}
+.welcome .form-container input{
+    background: transparent;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 15px 0px;
+}
+.welcome .form-container input:focus, .welcome .form-container input:active{
+    outline: none !important;
+    box-shadow: none;
+}
+.welcome .form-container hr{
+    background-color: grey;
+    height: 2px;
+    border-radius: 10px;
+}
+.welcome .form-container button{
+    width: 100%;
+    background:#3d4f7c;
+    border-radius: 30px;
+    padding: 10px 0px;
+}
+.welcome .form-container button:focus, .welcome .form-container button:active{
+    outline: none !important;
+    box-shadow: none;
+}
+
+.services h1{
+    font-weight: 800;
+}
+
+@media screen and (max-width: 992px) {
+    .services h1{
+        margin-bottom: 50px;
+    }
+}
+
+.services .service-card {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+.services .service-card .icon{
+    padding-right: 30px;
+}
+.services .service-card .icon .icon-holder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.services .service-card .title{
+    font-weight: 800;
+    font-size: 1.5em;
+}
+.services .service-card .subtitle{
+    font-size: 0.9em;
+}
+
+.transactions{
+    padding-bottom: 50px;
+}
+.transactions h3{
+    font-weight: 800;
+    padding: 50px 0px;
+}
+
+.transactions .col-md-12{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #181918;
+    border-radius: 10px;
+    padding: 20px;
+}
+.transactions .transaction-card-content a{
+    text-decoration: none;
+    color: white;
+}
+.transactions .transaction-card-content a:hover{
+    color: #37c7da;
+}
+.transactions .transaction-card-content .timestamp{
+    color: #37c7da;
+    font-weight: bold;
+}
+.transactions .transaction-card-content img{
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
+.transactions .connect-btn-holder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -20px;
+}
+.transactions .connect-wallet{
+    padding: 15px 40px;
+    color: white;
+    font-weight: bold;
+    background-color: #2546bd;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.footer{
+    padding-bottom: 10px;
+}
+.footer hr{
+    height: 5px;
+    background-color: grey;
+    border-radius: 10px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+.footer a{
+    font-weight: 900;
+    text-decoration: none;
+    color: white;
+}
+.footer p{
+    margin-top: 20px;
+    font-weight: 500;
+    color: white;
+    font-size: 12px;
+}
+
+.loader-holder{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lds-ripple {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-ripple div {
+    position: absolute;
+    border: 4px solid #fff;
+    opacity: 1;
+    border-radius: 50%;
+    animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+  }
+  .lds-ripple div:nth-child(2) {
+    animation-delay: -0.5s;
+  }
+  @keyframes lds-ripple {
+    0% {
+      top: 36px;
+      left: 36px;
+      width: 0;
+      height: 0;
+      opacity: 0;
+    }
+    4.9% {
+      top: 36px;
+      left: 36px;
+      width: 0;
+      height: 0;
+      opacity: 0;
+    }
+    5% {
+      top: 36px;
+      left: 36px;
+      width: 0;
+      height: 0;
+      opacity: 1;
+    }
+    100% {
+      top: 0px;
+      left: 0px;
+      width: 72px;
+      height: 72px;
+      opacity: 0;
+    }
+  }
+
+.gradient-bg-welcome {
+    background-color:#0f0e13;
+     background-image: 
+        radial-gradient(at 0% 0%, hsla(253,16%,7%,1) 0, transparent 50%), 
+        radial-gradient(at 50% 0%, hsla(225,39%,30%,1) 0, transparent 50%), 
+        radial-gradient(at 100% 0%, hsla(339,49%,30%,1) 0, transparent 50%);
+}
+
+.gradient-bg-services {
+    background-color:#0f0e13;
+    background-image: 
+        radial-gradient(at 0% 0%, hsla(253,16%,7%,1) 0, transparent 50%), 
+        radial-gradient(at 50% 100%, hsla(225,39%,25%,1) 0, transparent 50%);
+}
+
+.gradient-bg-transactions {
+    background-color: #0f0e13;
+    background-image: 
+        radial-gradient(at 0% 100%, hsla(253,16%,7%,1) 0, transparent 50%), 
+        radial-gradient(at 50% 0%, hsla(225,39%,25%,1) 0, transparent 50%);
+}
+
+.gradient-bg-footer {
+    background-color: #0f0e13;
+    background-image: 
+        radial-gradient(at 0% 100%, hsla(253,16%,7%,1) 0, transparent 53%), 
+        radial-gradient(at 50% 150%, hsla(339,49%,30%,1) 0, transparent 50%);
+}
+
+.blue-glassmorphism {
+    background: rgb(39, 51, 89, 0.4);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+/* white glassmorphism */
+.white-glassmorphism {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.eth-card {
+    background-color:#a099ff;
+    background-image: 
+        radial-gradient(at 83% 67%, rgb(152, 231, 156) 0, transparent 58%), 
+        radial-gradient(at 67% 20%, hsla(357,94%,71%,1) 0, transparent 59%), 
+        radial-gradient(at 88% 35%, hsla(222,81%,65%,1) 0, transparent 50%), 
+        radial-gradient(at 31% 91%, hsla(9,61%,61%,1) 0, transparent 52%), 
+        radial-gradient(at 27% 71%, hsla(336,91%,65%,1) 0, transparent 49%), 
+        radial-gradient(at 74% 89%, hsla(30,98%,65%,1) 0, transparent 51%), 
+        radial-gradient(at 53% 75%, hsla(174,94%,68%,1) 0, transparent 45%);
+}
+
+.text-gradient {
+    background-color: #fff;
+    background-image: radial-gradient(at 4% 36%, hsla(0,0%,100%,1) 0, transparent 53%), radial-gradient(at 100% 60%, rgb(0, 0, 0) 0, transparent 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

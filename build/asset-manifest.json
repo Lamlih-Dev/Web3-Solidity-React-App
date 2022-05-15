@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Web3-Solidity-React-App/static/css/main.5da31889.css",
+    "main.js": "/Web3-Solidity-React-App/static/js/main.f5e31aac.js",
+    "index.html": "/Web3-Solidity-React-App/index.html",
+    "main.5da31889.css.map": "/Web3-Solidity-React-App/static/css/main.5da31889.css.map",
+    "main.f5e31aac.js.map": "/Web3-Solidity-React-App/static/js/main.f5e31aac.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5da31889.css",
+    "static/js/main.f5e31aac.js"
+  ]
+}
